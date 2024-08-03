@@ -32,5 +32,4 @@ public class userController {
     public ResponseEntity<User> adicionaUser(@RequestBody User user){
         return ResponseEntity.ok(servicesImplementation.inserirUser(user));
     }
-
 }

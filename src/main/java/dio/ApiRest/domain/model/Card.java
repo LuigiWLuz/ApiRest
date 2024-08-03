@@ -17,9 +17,9 @@ public class Card{
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "idCartao")
     private Long id;
-    @Column(unique = true)
+    @Column(name="numerosCartao",unique = true)
     private String numerosCartao;
-    @Column(precision = 13,scale = 2)
+    @Column(name = "limiteCartao",precision = 13,scale = 2)
     private BigDecimal limite;
 
     public BigDecimal getLimite() {

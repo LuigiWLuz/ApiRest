@@ -18,13 +18,14 @@ public class Account {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "idConta")
     private Long Id;
-    @Column(unique = true)
+    @Column(name="NumeroConta",unique = true)
     private String number;
+    @Column(name="Agencia")
     private String agencia;
     //<<BigDecimal>> tipo recomendado quando se trata de valores monetarios
-    @Column(precision = 13,scale = 2)//são treze numeros 11 inteiros e dois pontos flutuantes
+    @Column(name="Saldo",precision = 13,scale = 2)//são treze numeros 11 inteiros e dois pontos flutuantes
     private BigDecimal saldo;
-    @Column(precision = 13,scale = 2)
+    @Column(name="limiteConta",precision = 13,scale = 2)
     private BigDecimal limite;
 
     public String getAgencia() {

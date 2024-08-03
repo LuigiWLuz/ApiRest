@@ -1,6 +1,7 @@
 package dio.ApiRest.domain.model;
 
 
+import jakarta.persistence.Column;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
@@ -12,7 +13,9 @@ public abstract class classApresentacaoFeatureNews {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+    @Column(name = "icone")
     private String icon;
+    @Column(name = "Descricao")
     private String Description;
 
     public String getDescription() {

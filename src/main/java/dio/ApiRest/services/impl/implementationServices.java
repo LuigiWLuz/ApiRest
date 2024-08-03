@@ -34,7 +34,7 @@ public class implementationServices implements servicesUser {
     }
 
     @Override
-    public void deletarUser(Long id) {
+    public void deletarUser(Long id) { 
         System.out.println("Teste deletou.");
     }
 
